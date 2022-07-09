@@ -78,6 +78,7 @@ const AppointmentContent = () => {
           id='date'
           value={date}
           onChange={onChange}
+          placeholder='Appointment Date'
           required
           className='form-input w-full p-4 rounded-lg hover:border-mainPurple focus-within:border-mainPurple outline-none bg-transparent'
         />
