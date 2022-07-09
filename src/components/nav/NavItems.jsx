@@ -28,7 +28,7 @@ const NavItems = ({ closeMenu }) => {
         {navLinks.links?.map((link, index) => (
           <li
             key={link.id}
-            className={`text-xl font-medium lg:font-normal px-6 py-2 lg:px-1 md:flex md:mx-auto  ${
+            className={`text-xl font-medium lg:font-normal px-6 py-2 lg:px-1 md:flex md:mx-auto hover:text-mainPurple transition-all duration-400  ${
               navLinks.links[index] === navLinks.active &&
               'lg:border-b-2 lg:border-b-mainPurple lg:text-mainPurple lg:font-medium'
             }`}
