@@ -1,0 +1,53 @@
+.hoverParent {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0.8rem;
+  transition: all 0.5s ease-out 0s;
+}
+
+.hoverChild {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  background: url('../../images/faq-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.8s ease-out 0s;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transform: scale(0.8);
+  z-index: -1;
+}
+
+.hoverChild::after {
+  content: '';
+  background: rgba(102, 36, 112, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.8rem;
+}
+
+.hoverParent:hover .hoverChild {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hoverParent:hover .show-icon,
+.hoverParent .hide-icon {
+  display: none;
+}
+
+.hoverParent:hover .hide-icon {
+  display: inline-block;
+}
