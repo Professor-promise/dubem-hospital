@@ -34,7 +34,7 @@ const Nav = () => {
         scroll && 'fixed top-0 left-0 bottom-0 right-0'
       }`}
     >
-      <div className='w-full pb-10 flex flex-col items-center justify-center lg:flex-row lg:pb-0 lg:justify-between rounded-lg bg-mainWhite shadow-lg lg:shadow-none lg:bg-transparent gap-6'>
+      <div className='w-full flex flex-col items-center justify-center lg:flex-row lg:justify-between rounded-lg bg-mainWhite shadow-lg lg:shadow-none lg:bg-transparent gap-6'>
         <div className='w-full lg:w-[auto] flex items-center justify-between px-6 lg:px-0'>
           <div className='w-full'>
             <img
@@ -54,7 +54,7 @@ const Nav = () => {
         <NavItems {...{ closeMenu, showLinks }} />
         <Link
           to='signin'
-          className={`text-2xl md:text-xl font-medium lg:font-normal bg-mainPurple px-4 py-2 text-white rounded-lg hover:bg-lightPurple ${
+          className={`text-2xl md:text-xl font-medium lg:font-normal bg-mainPurple px-4 py-2 text-white rounded-lg hover:bg-lightPurple mb-10 lg:mb-0 ${
             showLinks ? 'block' : 'hidden lg:block'
           }`}
         >
