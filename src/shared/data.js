@@ -84,17 +84,17 @@ export const contactsIcon = [
       {
         id: 1,
         Icon: Facebook,
-        url: '',
+        url: '//https://www.facebook.com/Professorpromise/',
       },
       {
         id: 2,
         Icon: Twitter,
-        url: '',
+        url: '//https://twitter.com/',
       },
       {
         id: 3,
         Icon: LinkedIn,
-        url: '',
+        url: '//https://www.linkedin.com/in/promise-chidubem-umeh-842992143/',
       },
     ],
   },

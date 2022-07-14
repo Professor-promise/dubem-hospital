@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
 import { links } from '../../shared/data';
-import Lock from '@mui/icons-material/Lock';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
 const Container = styled.div`
+  width: 100%;
   a {
     &.active {
       color: var(--mainPurple);
@@ -16,21 +15,12 @@ const Container = styled.div`
   }
 `;
 
-const NavItems = ({ closeMenu }) => {
-  /*   const handleClick = (e) => {
-    e.preventDefault();
-    const target = e.target.getAttribute('href');
-    const location = document.querySelector(target).offsetTop;
-
-    window.scrollTo({
-      top: location - 100,
-      left: 0,
-    });
-  }; */
-
+const NavItems = ({ closeMenu, showLinks }) => {
   return (
-    <Container>
-      <ul className='w-full py-4 text-sm gap-5 lg:gap-5 flex flex-col items-center justify-center lg:flex-row'>
+    <Container
+      className={`${showLinks ? 'flex' : 'hidden lg:flex '} lg:justify-center`}
+    >
+      <ul className='w-full lg:w-[auto] text-sm gap-5 lg:gap-5 flex flex-col items-center justify-center lg:flex-row  '>
         {links?.map(({ id, url, text }) => (
           <li
             key={id}
@@ -43,6 +33,7 @@ const NavItems = ({ closeMenu }) => {
               duration={700}
               spy={true}
               exact='true'
+              onClick={closeMenu}
             >
               {text}
             </Link>

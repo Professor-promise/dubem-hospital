@@ -2,6 +2,7 @@ import React from 'react';
 import shape_8 from '../../images/shape-8.svg';
 import logo from '../../images/logo_3.png';
 import { contactsIcon, links, serviceIcons } from '../../shared/data';
+import { Link } from 'react-scroll';
 
 const Footer = () => {
   return (
@@ -30,6 +31,8 @@ const Footer = () => {
                 <a
                   href={url}
                   key={id}
+                  target='_blank'
+                  rel='noreferrer'
                   className='border-mainGray hover:border-mainPurple border-2 rounded-lg hover:bg-mainPurple cursor-pointer z-30 transition-all duration-700'
                 >
                   {<Icon className='h-10 w-10 ' />}
@@ -42,25 +45,30 @@ const Footer = () => {
         <div className='flex flex-col gap-2 items-start'>
           <h3 className='text-2xl font-semibold'>Quick Link</h3>
           {links?.map(({ id, text, url }) => (
-            <a
+            <Link
               key={id}
-              href={url}
-              className='text-lg hover:text-mainPurple hover:translate-x-2 transition-all duration-1000'
+              to={url}
+              className='text-lg hover:text-mainPurple hover:translate-x-2 transition-all duration-1000 cursor-pointer'
+              smooth={true}
+              offset={-60}
+              exact='true'
+              spy={true}
+              duration={700}
             >
               {text}
-            </a>
+            </Link>
           ))}
         </div>
         <div className='flex flex-col gap-2'>
           <h3 className='text-2xl font-semibold'>Quick Link</h3>
           {serviceIcons?.map(({ id, heading }) => (
-            <a
+            <Link
               key={id}
-              href='#'
+              to='#'
               className='text-lg  hover:text-mainPurple hover:translate-x-2 transition-all duration-1000 z-30'
             >
               {heading}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
