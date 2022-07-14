@@ -35,32 +35,32 @@ export const links = [
   {
     id: 'home',
     text: 'Home',
-    url: '#home',
+    url: 'home',
   },
   {
     id: 'about',
     text: 'About',
-    url: '#about',
+    url: 'about',
   },
   {
     id: 'services',
     text: 'Services',
-    url: '#services',
+    url: 'services',
   },
   {
     id: 'doctor',
     text: 'Doctor',
-    url: '#doctor',
+    url: 'doctor',
   },
   {
     id: 'blog',
     text: 'Blog',
-    url: '#blog',
+    url: 'blog',
   },
   {
     id: 'contact',
     text: 'Contact',
-    url: '#contact',
+    url: 'contact',
   },
 ];
 

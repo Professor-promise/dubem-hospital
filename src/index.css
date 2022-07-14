@@ -29,12 +29,3 @@
   box-sizing: border-box;
   font-family: var(--mainFont);
 }
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px;
-}
-
-.height {
-  height: calc(100vh - 80px);
-}

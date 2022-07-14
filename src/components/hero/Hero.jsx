@@ -65,7 +65,7 @@ const Container = styled.div`
 
 const Hero = () => {
   return (
-    <Container>
+    <Container id='home'>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -78,7 +78,6 @@ const Hero = () => {
         }}
         modules={[Autoplay, Pagination, Navigation]}
         className='mySwiper'
-        id='home'
       >
         {sliderContent?.map((item) => (
           <SwiperSlide key={item.id}>

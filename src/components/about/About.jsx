@@ -6,7 +6,7 @@ import shape_2 from '../../images/shape-2.svg';
 const About = () => {
   return (
     <div
-      className='w-full flex flex-col shadow-md items-center justify-center pb-1 bg-mainWhite p-5 relative left-0 overflow-hidden'
+      className='w-full flex flex-col shadow-md items-center justify-center pb-1 bg-mainWhite p-5 relative left-0 top-0 overflow-hidden'
       id='about'
     >
       <img
@@ -24,7 +24,7 @@ const About = () => {
         Learn More
       </button>
       <div className='w-full'>
-        <img src={about_img} alt='' />
+        <img src={about_img} alt='' className='object-cover' />
       </div>
     </div>
   );

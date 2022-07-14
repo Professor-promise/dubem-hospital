@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <div
       id='services'
-      className='flex flex-col items-center justify-center p-5 gap-4 relative top-0 left-0 lg:py-7'
+      className='flex flex-col items-center justify-center p-5 gap-4 relative top-0 left-0 md:pb-7 md:mt-14 pt-2'
     >
       <img src={shape_3} alt='background' className='absolute left-0 top-0' />
       <Utils
