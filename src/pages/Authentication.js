@@ -1,10 +1,10 @@
 import React from 'react';
-import Auth from '../components/Form';
+import Login from '../components/Form';
 
 const Authentication = () => {
   return (
     <>
-      <Auth />
+      <Login />
     </>
   );
 };

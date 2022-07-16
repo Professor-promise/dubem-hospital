@@ -119,7 +119,7 @@ const Login = () => {
           </div>
         </div>
         <button className='bg-lightPurple rounded-md text-mainWhite p-2 font-semibold text-xl hover:bg-mainPurple'>
-          Sign Up
+          {isRegistered ? 'Register' : 'Login'}
         </button>
         <p className='text-center'>
           Already a user?
