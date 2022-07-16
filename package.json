@@ -47,7 +47,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@tailwindcss/forms": "^0.5.2"
-  }
+  "devDependencies": {}
 }

@@ -45,7 +45,7 @@ const AppointmentContent = () => {
           value={name}
           onChange={onChange}
           required
-          className='form-input w-full rounded-lg p-4 hover:border-mainPurple focus-within:border-mainPurple outline-none bg-transparent'
+          className='border-2 border-zinc-500  w-full rounded-lg p-4 focus-within:border-mainPurple outline-none bg-transparent'
         />
         <input
           type='text'
@@ -54,7 +54,7 @@ const AppointmentContent = () => {
           id='email'
           value={email}
           onChange={onChange}
-          className='form-input w-full rounded-lg p-4 hover:border-mainPurple focus-within:border-mainPurple outline-none bg-transparent'
+          className='border-2 border-zinc-500 w-full rounded-lg p-4 focus-within:border-mainPurple outline-none bg-transparent'
         />
       </div>
       <div className='w-full flex flex-col items-center gap-4  lg:flex-row'>
@@ -64,7 +64,7 @@ const AppointmentContent = () => {
           value={select}
           onChange={onChange}
           required
-          className='w-full form-select p-4 rounded-lg hover:border-mainPurple focus-within:border-mainPurple outline-none bg-transparent'
+          className='w-full border-2 border-zinc-500 p-4 rounded-lg focus-within:border-mainPurple outline-none bg-transparent'
         >
           {doctorsContent?.map(({ id, name }) => (
             <option value={name} key={id}>
@@ -80,7 +80,7 @@ const AppointmentContent = () => {
           onChange={onChange}
           placeholder='Appointment Date'
           required
-          className='form-input w-full p-4 rounded-lg hover:border-mainPurple focus-within:border-mainPurple outline-none bg-transparent'
+          className='border-2 border-zinc-500 w-full p-4 rounded-lg focus-within:border-mainPurple outline-none bg-transparent'
         />
       </div>
       <input
@@ -90,7 +90,7 @@ const AppointmentContent = () => {
         value={subject}
         onChange={onChange}
         required
-        className='w-full rounded-lg p-4 form-input hover:border-mainPurple focus-within:border-mainPurple outline-none bg-transparent'
+        className='border-2 border-zinc-500 w-full rounded-lg p-4  focus-within:border-mainPurple outline-none bg-transparent'
       />
       <textarea
         placeholder='Message'
@@ -99,7 +99,7 @@ const AppointmentContent = () => {
         value={message}
         onChange={onChange}
         rows='8'
-        className='w-full p-4 form-textarea rounded-lg bg-transparent'
+        className='border-2 border-zinc-500 w-full p-4 form-textarea rounded-lg  focus-within:border-mainPurple outline-none bg-transparent'
       ></textarea>
       <button className='bg-mainPurple p-4 text-mainWhite text-xl font-medium rounded-lg outline-none'>
         Send Message
