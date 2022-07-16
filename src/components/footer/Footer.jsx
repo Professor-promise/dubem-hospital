@@ -2,9 +2,13 @@ import React from 'react';
 import shape_8 from '../../images/shape-8.svg';
 import logo from '../../images/logo_3.png';
 import { contactsIcon, links, serviceIcons } from '../../shared/data';
-import { Link } from 'react-scroll';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Footer = () => {
+  const handleScrollTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <div className='w-full bg-zinc-500 relative top-0 left-0 p-4 lg:py-10 lg:px-40 overflow-hidden '>
       <img
@@ -17,9 +21,15 @@ const Footer = () => {
         alt=''
         className='absolute hidden lg:block top-0 right-0 z-10'
       />
-      <div className='flex flex-col lg:grid lg:grid-cols-3 gap-10 justify-items-start text-mainWhite py-4 lg:py-10 z-20'>
-        <div className='w-full flex flex-col items-start gap-4'>
-          <img src={logo} alt='' />
+      <div className='flex flex-col lg:grid lg:grid-cols-3 gap-10 justify-items-start text-mainWhite py-4 lg:py-10 '>
+        <div className='w-full flex flex-col items-start gap-4 z-20'>
+          <Link
+            to='/'
+            onClick={handleScrollTop}
+            className='w-full cursor-pointer'
+          >
+            <img src={logo} alt='' className='object-cover' />
+          </Link>
           <p className='text-lg'>
             Your Health is Our Top Priority', info: 'The most exquisite pleasure
             in the practice of medicine comes from nudging a layman in the
@@ -42,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='flex flex-col gap-2 items-start'>
+        <div className='flex flex-col gap-2 items-start z-20'>
           <h3 className='text-2xl font-semibold'>Quick Link</h3>
           {links?.map(({ id, text, url }) => (
             <Link

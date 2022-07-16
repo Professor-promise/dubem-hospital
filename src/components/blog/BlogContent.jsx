@@ -1,5 +1,4 @@
 import React from 'react';
-import blog_img from '../../images/blog-1.png';
 import ArrowRightAltOutlined from '@mui/icons-material/ArrowRightAltOutlined';
 
 const BlogContent = ({ item }) => {
