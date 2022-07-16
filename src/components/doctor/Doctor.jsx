@@ -7,10 +7,7 @@ import imgBg_1 from '../../images/shape-5.svg';
 
 const Doctor = () => {
   return (
-    <div
-      id='doctor'
-      className='relative top-[250px] lg:top-2 left-0 lg:mt-0 pt-6'
-    >
+    <div id='doctor' className='relative top-0 left-0 py-10 lg:pb-2'>
       <img src={imgBg} alt='' className='absolute top-0 right-0' />
       <img src={imgBg_1} alt='' className='absolute bottom-[45%] left-0' />
       <Utils

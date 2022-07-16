@@ -3,7 +3,10 @@ import { contactsIcon } from '../../shared/data';
 
 const Contact = () => {
   return (
-    <div id='home' className='hidden lg:block px-40 py-5 bg-mainPurple'>
+    <div
+      id='home'
+      className='opacity-0 lg:opacity-100 px-40 py-5 bg-mainPurple'
+    >
       {contactsIcon?.map((contacts, index) => (
         <div key={index} className='flex justify-between'>
           <div className='flex gap-5 text-mainWhite'>

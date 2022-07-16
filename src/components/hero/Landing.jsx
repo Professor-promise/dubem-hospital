@@ -6,7 +6,7 @@ import { landingIcons } from '../../shared/data';
 
 const Landing = () => {
   return (
-    <div className='flex flex-col space-y-6 items-center justify-center relative top-0 left-0 bg-mainGray shadow-sm'>
+    <div className='flex flex-col gap-3 py-10 px-3 lg:gap-6 items-center justify-center relative top-0 left-0 bg-mainGray shadow-sm'>
       <img
         src={shape_1}
         alt=''

@@ -10,6 +10,8 @@ const Container = styled.div`
 
   .first {
     position: relative;
+    top: 0;
+    left: 0;
     background: url(${faq_1});
     background-position: center;
     background-repeat: no-repeat;
@@ -19,24 +21,22 @@ const Container = styled.div`
     &::after {
       content: '';
       position: absolute;
-      width: 100%;
-      height: 100%;
       background: rgba(138, 3, 159, 0.15);
       top: 0;
       left: 0;
+      bottom: 0;
+      right: 0;
     }
 
     @media screen and (max-width: 768px) {
       background-size: cover;
       background-position: top;
-      padding: 100px;
+      padding: 100px 0;
       background-attachment: fixed;
     }
   }
 
   .second {
-    padding: 35px 0;
-    /* background: relative; */
     flex: 0.5;
     background: var(--lightPurple);
     display: flex;
@@ -47,7 +47,7 @@ const Container = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    height: 100vh;
+    width: 100%;
   }
 `;
 
@@ -56,11 +56,11 @@ const Faq = () => {
     <Container>
       <span className='first'></span>
       <div className='second'>
-        <section className='w-full lg:w-[80%] lg:px-10 py-14 px-5 flex flex-col gap-6 font-auxFont'>
-          <h3 className='text-2xl lg:text-3xl lg:font-bold '>
+        <section className='w-full lg:w-[80%] lg:px-10 py-8 px-5 flex flex-col gap-6 font-auxFont'>
+          <h3 className='text-[1.3rem] lg:text-3xl lg:font-bold '>
             Frequently Asked Questions
           </h3>
-          <h2 className='text-[2.4rem] lg:text-[2.8rem] font-bold'>
+          <h2 className='text-[2.3rem] lg:text-[2.8rem] font-bold'>
             Get Every Single Answers There if you want
           </h2>
 

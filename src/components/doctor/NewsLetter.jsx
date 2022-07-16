@@ -8,8 +8,8 @@ import PhoneCallbackOutlined from '@mui/icons-material/PhoneCallbackOutlined';
 const Container = styled.div`
   background: url(${newsBg}) no-repeat;
   background-position: cover;
-  margin: 4rem 0;
-
+  background-size: cover;
+  padding: 4rem 0;
   position: relative;
   z-index: 0;
 
@@ -32,7 +32,7 @@ const Container = styled.div`
 const NewsLetter = () => {
   return (
     <Container className='w-full  '>
-      <div className='flex flex-col px-7 gap-[1.2rem] lg:gap-[2rem] py-8 lg:px-40 lg:py-14 lg:w-[65%] card'>
+      <div className='flex flex-col px-7 gap-[1.2rem] lg:gap-[2rem] lg:px-40 lg:w-[65%] card'>
         <h2 className='text-5xl lg:text-[3.7rem] font-medium font-auxFont text-mainWhite'>
           Subscribe Our Newsletter
         </h2>
@@ -44,7 +44,7 @@ const NewsLetter = () => {
           <input
             type='text'
             placeholder='Enter Your Email'
-            className='px-6 py-5 rounded-md w-full text-xl hover:shadow-md focus-within:shadow-md outline-none'
+            className='px-6 py-5 rounded-md w-full text-xl hover:shadow-md focus-within:shadow-md outline-none border-none'
           />
           <button className='bg-mainPurple px-6 py-5 rounded-lg font-semibold text-mainWhite text-xl cursor-pointer hover:bg-lightPurple outline-none'>
             Subscribe

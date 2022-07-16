@@ -7,7 +7,7 @@ import shape_6 from '../../images/shape-6.svg';
 const Blog = () => {
   return (
     <div
-      className='w-full pt-60 lg:pt-4 pb-10 lg:mt-0 flex items-center flex-col gap-5 relative'
+      className='w-full py-10 flex items-center flex-col gap-5 relative top-0 left-0'
       id='blog'
     >
       <img src={shape_6} alt='' className='absolute top-0 right-0' />

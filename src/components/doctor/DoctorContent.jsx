@@ -14,7 +14,9 @@ import { doctorsContent } from '../../shared/data';
 
 const Container = styled.div`
   .swiper {
-    /* width: 100%;
+    width: 100%;
+    margin-bottom: 4rem;
+    /* 
     height: 100%; */
   }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import ArrowRightAltOutlined from '@mui/icons-material/ArrowRightAltOutlined';
-import './services.css';
 import { serviceIcons } from '../../shared/data';
+import './servicesContent.css';
 
 const ServicesContent = () => {
   return serviceIcons?.map(({ id, showIcon, hideIcon, heading, content }) => (
