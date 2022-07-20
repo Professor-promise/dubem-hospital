@@ -13,13 +13,13 @@ const AppointmentContent = () => {
 
   const { name, email, select, date, subject, message } = formData;
 
-  const onChange = (e) => {
+  const onChange = e => {
     setFormData({
       [e.target.id]: e.target.value,
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     setFormData({
       name: '',
@@ -78,9 +78,9 @@ const AppointmentContent = () => {
           id='date'
           value={date}
           onChange={onChange}
-          placeholder='Appointment Date'
+          placeholder='Appointment Date '
           required
-          className='border-2 border-zinc-500 w-full p-4 rounded-lg focus-within:border-mainPurple outline-none bg-transparent'
+          className='border-2 border-zinc-500 w-full p-4 rounded-lg focus-within:border-mainPurple outline-none bg-transparent before:content-[attr(placeholder)] before:text-zinc-500 focus:text-mainBrown valid:text-mainBrown text-transparent focus:before:content-[""] valid:before:content-[""]'
         />
       </div>
       <input

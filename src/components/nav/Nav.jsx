@@ -35,7 +35,7 @@ const Nav = () => {
 
   return (
     <nav
-      className={`w-full sticky top-0 left-0 border shadow-sm bg-mainWhite py-3 flex flex-col lg:flex-row h-20 lg:justify-between lg:items-center lg:px-40 lg:py-5 z-20 ${
+      className={`w-full sticky top-0 left-0 border shadow-sm bg-mainWhite py-3 flex flex-col lg:flex-row h-20 lg:justify-between lg:items-center lg:px-40 lg:py-5 z-40 ${
         scroll && 'fixed top-0 left-0 bottom-0 right-0'
       }`}
     >
